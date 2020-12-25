@@ -3,7 +3,7 @@ let dynamicRoutes = () => {
   const routes = axios
     .get("https://wordpress.coldbeer.tk/wp-json/wp/v2/posts?page=1&per_page=20")
     .then(res => {
-      return res.data.map(post => `/blog/${post.slug}`)
+      return res.data.map(post => `${post.slug}`)
     })
   console.log(routes)
   return routes
