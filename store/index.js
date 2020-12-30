@@ -1,4 +1,4 @@
-const siteURL = "https://wordpress.coldbeer.tk"
+const siteURL = "https://wordpress.gintonic.cf"
 
 export const state = () => ({
   posts: [],
